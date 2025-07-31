@@ -19,6 +19,19 @@ import RoleScreen from './pages/Setup/RoleScreen';
 import HomeScreen from './pages/Home/HomeScreen';
 import ExploreScreen from './pages/Home/ExploreScreen';
 import CreatePostScreen from './pages/Home/CreatePostScreen';
+import ChatScreen from './pages/Home/Chat/ChatScreen';
+import MessageScreen from './pages/Home/Chat/MessageScreen';
+import ProfileScreen from './pages/Home/Profile';
+import EditProfileScreen from './pages/Home/Profile/EditProfileScreen';
+import ConnectionScreen from './pages/Home/Profile/ConnectionScreen';
+import BalanceScreen from './pages/Home/Profile/BalanceScreen';
+import ExchangeScreen from './pages/Home/Profile/ExchangeScreen';
+import WithdrawScreen from './pages/Home/Profile/WithdrawScreen';
+import WithdrawMethodScreen from './pages/Home/Profile/WithdrawMethodScreen';
+import TransactionHistoryScreen from './pages/Home/Profile/TransactionHistoryScreen';
+import LevelScreen from './pages/Home/Profile/LevelScreen';
+
+
 const Stack = createNativeStackNavigator();
 
 export default function App() {
@@ -44,6 +57,17 @@ export default function App() {
         <Stack.Screen name="home" component={HomeScreen} />
         <Stack.Screen name="explore" component={ExploreScreen} />
         <Stack.Screen name="createpost" component={CreatePostScreen} />
+        <Stack.Screen name="chat" component={ChatScreen} />
+        <Stack.Screen name="message" component={MessageScreen} />
+        <Stack.Screen name="profile" component={ProfileScreen} />
+        <Stack.Screen name="edit_profile" component={EditProfileScreen} />
+        <Stack.Screen name="connections" component={ConnectionScreen} />
+        <Stack.Screen name="balance" component={BalanceScreen} />
+        <Stack.Screen name="exchange" component={ExchangeScreen} />
+        <Stack.Screen name="withdraw" component={WithdrawScreen} />
+        <Stack.Screen name="withdraw_methods" component={WithdrawMethodScreen} />
+        <Stack.Screen name="transaction_history" component={TransactionHistoryScreen} />
+        <Stack.Screen name="level" component={LevelScreen} />
 
       </Stack.Navigator>
     </NavigationContainer>
